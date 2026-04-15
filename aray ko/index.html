@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            font-family: 'segoe UI';
+        }
+        .parent-nav{
+            background-color: #2c3e50;
+            display: flex;
+            color: white;
+            padding: 10px 15px;
+            justify-content: space-between;
+        }
+        .child-nav{
+            border: none;
+            color: green;
+        }
+        .nav-link{
+            color: white;
+            text-decoration: none;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .parent-head{
+            
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Natural-Philippines-Mount-Mayon.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;     
+        }
+        .child-head{
+           
+            height: 200px;
+            width: 400px;
+        }
+        .grand-child-head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-head{
+            background-color: lightblue;
+            flex: auto;
+            
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        .child-section{
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 10px 15px;
+        }
+        .parent-section{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 50px;
+            background-color: white;
+        }
+        .nav-link:hover{
+             color: white;
+            text-decoration: none;
+            color:green;
+
+        }
+        .child-section:hover{
+            transform: scale(1.1);
+            transition:0.3s ;        
+        }
+    </style>
+</head>
+<body>
+    <nav class="parent-nav">
+        <div class="child-nav">GREEN NATURE <br> environment them</div>
+        <div>
+        <a href="podcast.html" class="nav-link" > PodCasts</a>
+        <a href="recycle.html" class="nav-link" > How to Recycle</a>
+        <a href="echo.html" class="nav-link" > Eco Tech</a>
+        <a href="garden.html" class="nav-link" > Home & Garden</a>
+        <a href="more.html" class="nav-link" > More</a>
+         <a href="" class="nav-link" > About Us</a>
+        </div>
+
+    </nav>
+
+    <header class="parent-head">
+        <div class="child-head">
+          <h1 style="text-align: center;">SAVE NATURE AND ENVIRONMENT</h1>
+          <p style="text-align: center;">Nature is the beautiful and essential force that sustains life on Earth</p>
+         
+        </div>
+    </header>
+
+    <section class="parent-section">
+        <div class="child-section" onclick="location.href='forestpage.html'">
+            <h3>Save our forest</h3>
+            <p>protecting and preserving forests <br>
+                 by preventing deforestation, planting trees, <br>
+                  and using forest resources responsibly so <br>
+                   they can continue to support life on Earth</p>
+         </div>
+        <div class="child-section" onclick="location.href='waterpage.html'"> 
+            <h3>Save our water</h3>
+            <p>using water wisely and preventing <br>
+                it from being wasted so there will be <br>
+                 enough clean water for everyone <br>
+                  now and in the future.</p>
+        </div>
+        <div class="child-section" onclick="location.href='recycpage.html'"> 
+            <h3>Recycling is A must</h3>
+            <p>Recycling is important because <br>
+                it helps reduce waste <br>
+                and keeps the environment clean.</p>
+        </div>
+    </section>
+
+    <footer style="background-color: #79e938;">
+        <p style="text-align: center;">ENVIRONMENT AND NATURE</p>
+    </footer>
+</body>
+</html>
